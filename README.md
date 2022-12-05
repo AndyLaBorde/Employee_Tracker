@@ -32,6 +32,7 @@ This is a command-line application built from scratch to manage a company's empl
 1. Clone the Repository on to your machine.
 2. Open the terminal and ensure you are in the right file path.
 3. Run the command ```npm i``` to download the packages.
+4. Run comman ```npm i console.table``` to download package.
 4. Then run the command ```npm start``` to run the application.
 
 ## User Story
