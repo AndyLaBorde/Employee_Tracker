@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "dotenv": "^16.0.3",
+    "inquirer": "^8.2.4",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.26.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "employee_tracker",
+  "description": "Using Content Management Systems. Databases using nodes.js, inquirer, MySQL",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndyLaBorde/Employee_Tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndyLaBorde/Employee_Tracker/issues"
+  },
+  "homepage": "https://github.com/AndyLaBorde/Employee_Tracker#readme"
+}
