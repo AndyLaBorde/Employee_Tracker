@@ -19,7 +19,7 @@ const db = mysql.createConnection(
     console.log(`Connected to the employeeTracker_ database.`)
 );
 // prompts options choice
-const initalPrompt = () => {
+const initialPrompt = () => {
     inquirer.prompt([
         {
             type: "list",
@@ -51,7 +51,7 @@ function showEmployees() {
         "SELECT employee.id, employee.first_name, employee.last_name, role.title AS title, department.name AS department, role.salary, employee.manager_id  FROM((employee JOIN role ON employee.role_id = role.id) JOIN department ON department.id = role.department_id) ",
         (err, results) => {
             console.table(results);
-            initalPrompt();
+            i();
         }
     );
 }
@@ -59,7 +59,7 @@ function showDepartments() {
     db.query(
         "SELECT * FROM department", (err, results) => {
             console.table(results);
-            initalPrompt();
+            i();
         }
     )
 }
@@ -67,7 +67,7 @@ function showRoles() {
     db.query(
         "SELECT role.id, role.title, department.name AS department, role.salary FROM role JOIN department ON role.department_id = department.id,", (err, results) => {
             console.table(results);
-            initalPrompt();
+            i();
         }
     )
 }
@@ -81,7 +81,7 @@ function addDepartment() {
     ]).then((results) => {
         db.query("INSERT INTO department (name) VALUES (?)", [results.departmentName], function (err, results) {
             console.log(results);
-            initalPrompt();
+            i();
         })
 
     })
@@ -138,7 +138,7 @@ function addEmployee() {
             "INSERT INTO employee (first_name, last_name, manager_id, role_id) VALUES (?, ?, ?, ?)", [results.firstName, results.lastName, results.manager, results.roleId],
             (err, results) => {
                 console.log(results);
-                initalPrompt();
+                i();
             })
     })
 }
