@@ -65,11 +65,13 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 ## Mock Up
 
-// Under Construction //
+![schema db data mapping](12-sql-homework-demo-01.png)
+
+![application screeenshot showing functionality](project_screenshot_1.png)
 
 ## Walkthrough
 
-// Under Construction //
+https://drive.google.com/file/d/1wfqPrFH68xvQDPV2Wz-2wf_nzaTzz6bZ/view
 
 ## Contributions
 
