@@ -65,6 +65,8 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 ## Mock Up
 
+![schema db data mapping](12-sql-homework-demo-01.png)
+
 ![application screeenshot showing functionality](project_screenshot_1.png)
 
 ## Walkthrough
